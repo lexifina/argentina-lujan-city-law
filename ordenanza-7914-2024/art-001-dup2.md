@@ -1,0 +1,1 @@
+Artículo 1º.- Condónese el pago total de las Tasas Municipales respecto del inmueble propiedad de la Sra. Ibañez, Hayde Teresa, DNI N° 1.394.001, con domicilio en la calle Maestro Argentino 257 de nuestra ciudad, a partir del 1° de enero de 2020 y hasta el 31 de diciembre del mismo año de la Cuenta N° 2260841, conforme lo establecido por la Ordenanza Fiscal N° 7836.-
