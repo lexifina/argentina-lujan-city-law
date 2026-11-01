@@ -212,12 +212,13 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ordenanza-8944-2026` | Ordenanza 8944/2026: Condónase la deuda de Tasas Municipales a las y los contribuyentes, cuyo listado y período adeudado luce a Orden 27 en IF-2026-00072787-MUNILUJAN-DIP#SEF conforme lo establece la Ordenanza Fiscal N° 7836 y sus modificato | 1 | 2026-09-23 to 2026-09-23 |
 | `ordenanza-8945-2026` | Ordenanza 8945/2026: Autorízase al Departamento Ejecutivo a suscribir el Convenio de Colaboración con la Cooperativa de Trabajo “Cielo Abierto Tres Estrellas” Limitada, el cual tiene por objeto fortalecer las actividades de separación en ori | 1 | 2026-09-23 to 2026-09-23 |
 | `ordenanza-8947-2026` | Ordenanza 8947/2026: Autorízase a la agencia de entretenimientos AMC Entertainment, a hacer uso del Museo de Bellas Artes Fernán Félix de Amador de la ciudad de Luján, ubicado sobre la calle 9 de Julio 863, desde el día viernes 26 de junio h | 1 | 2026-09-23 to 2026-09-23 |
+| `ordenanza-7479-2021` | Ordenanza 7479/2021: Ordenanza 7479/2021 | 1 | 2021-02-28 to 2021-02-28 |
 
-The build made 198 commits:
+The build made 199 commits:
 
 | Commits | Kind |
 | ---: | --- |
-| 198 | first version of an act |
+| 199 | first version of an act |
 | 0 | one law on its in-force day |
 | 0 | changes no amendment note explains, credited to the publisher |
 
@@ -225,7 +226,7 @@ Other counts:
 - 0 commits on the branch `futuro`: laws not yet in force on 2026-11-01.
 - 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
 - 198 laws in the record.
-- 396 tags.
+- 397 tags.
 
 ## Dates
 
@@ -237,13 +238,13 @@ When a law gives no date of its own, the default rule applies: An ordinance take
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `cef1bb125b8a57ae5145cf235ae147a2d9942e75ff4e34b52a6d748268be8c6d` (703947 bytes).
-- Builder blob hashes (`git hash-object`): `build.py` `a4faa25af85facb64b956b372f6b528aafdd7ec1`, `check.py` `3d00541d258745461ab52b1b0cb4e1716a27a95d`, `on.py` `644a6c0857fbcc72562032b58d57aa113fee0641`.
-- Python 3.12.10; git version 2.46.0.windows.1.
+- Corpus: sha256 `cffa36a2a6926f5d53a17c6a5be722c2717714ee42e7e27e4bd03c2de84d3a88` (707641 bytes).
+- Builder blob hashes (`git hash-object`): `build.py` `900da0d33bfd1ef455267fb4dcef7961fd5acc9c`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
+- Python 3.14.4; git version 2.53.0.
 
 ## Checks
 
-198 versions of 198 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+Not yet run for this build.
 
 No second build of this corpus has been compared yet.
 
@@ -254,6 +255,12 @@ No second build of this corpus has been compared yet.
 - The Province of Buenos Aires gives its municipalities no carta orgánica: their organic law is the provincial Ley Orgánica de las Municipalidades (Decreto-Ley 6769/58), which is provincial law and not included here. So this repository starts with ordinances.
 - Ordinances are taken from SIBOM's ordinance search for the partido, read from its last result page back (the search lists them only roughly in date order) until about 200 are found, the newest it holds. They are sorted by the day they took effect and added oldest first in parts of about 50, so each part extends the history forward. An ordinance whose page carries only an extract, no article, or its text only as a PDF annex is left out; the README lists every ordinance left out and why. An ordinance published twice is taken from its first publication.
 - Units: the heading (encabezado: number, place and date, the expediente line and anything before Artículo 1) and one file per article, holding the article and everything printed after it up to the next article (signatures, annexes). Nothing is dropped. One paragraph per line, spacing normalised.
+- Previously omitted ordinances in the earlier SIBOM catalogue were reconsidered. Full catalogue expansion is a separate part.
+- New acts have one publisher-credited oldest version available; SIBOM supplies bulletin texts, and later amendments are not consolidated into earlier ordinances.
+- Unamended bulletin wording is dated by its own vigencia clause or the ninth day after official publication under Código Civil y Comercial, arts. 5 and 6. Text with amendment notes but no latest amendment in-force date is dated at retrieval.
+- A two-digit year explicitly attached to an ordinance number is expanded to its century; explicit number years take precedence over publication years.
+- Complete texts without article headings are single-file acts in texto.md. Extracts, unreadable pages and separately linked annexes without complete verified text are left out.
+- Every included version matches the independent source reader word for word, including punctuation and ordered letters/digits, after normalizing spacing, Unicode NFC and discretionary soft hyphens.
 
 ## What AI did and did not do
 
@@ -265,3 +272,4 @@ The commit messages are written by `build.py` from the source data.
 
 Model use at data-build time:
 - A model (Claude) wrote the fetch and parse code and chose which norms to include; it wrote no law text. Every word of law comes from the provincial source's own texts.
+- GPT-6 wrote and reviewed reader code and metadata descriptions; it wrote no law text.

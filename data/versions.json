@@ -2772,6 +2772,20 @@
      "sha256": "2549cb493548289db687593973a0d6ef031f60955fd385158ccf9b3d375116f2"
     }
    ]
+  },
+  {
+   "slug": "ordenanza-7479-2021",
+   "short": "Ordenanza 7479/2021",
+   "title": "Ordenanza 7479/2021: Ordenanza 7479/2021",
+   "url": "https://sibom.slyt.gba.gob.ar/bulletins/4856/contents/1544308",
+   "versions": [
+    {
+     "from": "2021-02-28",
+     "units": 1,
+     "source_url": "https://sibom.slyt.gba.gob.ar/bulletins/4856/contents/1544308",
+     "sha256": "8c5c89789a0607d7686a3e4e5daf12f531cca9618dee6c6b7036b5cca0e1b3a2"
+    }
+   ]
   }
  ]
 }
