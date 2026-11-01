@@ -2775,13 +2775,13 @@
   },
   {
    "slug": "ordenanza-7479-2021",
-   "short": "Ordenanza 7479/2021",
-   "title": "Ordenanza 7479/2021: Ordenanza 7479/2021",
+   "short": "Withdrawn corpus record: Ordenanza 7479/2020",
+   "title": "Withdrawn corpus record: Ordenanza 7479/2020",
    "url": "https://sibom.slyt.gba.gob.ar/bulletins/4856/contents/1544308",
    "versions": [
     {
      "from": "2021-02-28",
-     "units": 1,
+     "units": 0,
      "source_url": "https://sibom.slyt.gba.gob.ar/bulletins/4856/contents/1544308",
      "sha256": "8c5c89789a0607d7686a3e4e5daf12f531cca9618dee6c6b7036b5cca0e1b3a2"
     }
