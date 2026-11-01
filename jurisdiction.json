@@ -1,0 +1,11 @@
+{
+  "path": "ar-b-lujan",
+  "code": "AR-B-LUJAN",
+  "name": "Luján",
+  "level": "municipality",
+  "parent": "ar-b",
+  "repo": "https://github.com/lexifina/argentina-lujan-city-law",
+  "build": "built: municipal ordinances (198 ordinances, 198 versions) from https://sibom.slyt.gba.gob.ar/cities/76",
+  "language": "es",
+  "sources": 1
+}
